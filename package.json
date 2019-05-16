@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "gaze": "1.1.2",
-    "tiny-lr": "1.0.3"
+    "tiny-lr": "1.0.5"
   },
   "devDependencies": {
     "mocha": "3.3.0"
