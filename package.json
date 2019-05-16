@@ -1,47 +1,47 @@
 {
-  "name": "nunjucks",
-  "description": "A powerful templating engine with inheritance, asynchronous control, and more (jinja2 inspired)",
-  "version": "2.0.0",
-  "author": "James Long <longster@gmail.com>",
-  "dependencies": {
-    "asap": "^2.0.3",
-    "chokidar": "^1.0.0",
-    "optimist": "*"
-  },
-  "browser": "./browser/nunjucks.js",
-  "devDependencies": {
-    "expect.js": "*",
-    "express": "4.x",
-    "istanbul": "0.3.x",
-    "jshint": "*",
-    "mocha": "*",
-    "node-libs-browser": "^0.4.3",
-    "supertest": "*",
-    "uglify-js": "*",
-    "webpack": "^1.8.11"
-  },
-  "engines": {
-    "node": "*"
-  },
-  "scripts": {
-    "lint": "jshint .",
-    "test": "jshint . && istanbul cover ./node_modules/mocha/bin/_mocha -- -b -R tap tests",
-    "browserfiles": "./bin/bundle"
-  },
-  "bin": {
-    "nunjucks-precompile": "./bin/precompile"
-  },
-  "main": "index",
+  "name": "gulp-nunjucks-render",
+  "version": "2.2.3",
+  "description": "Render Nunjucks templates with data",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozilla/nunjucks.git"
+    "url": "git://github.com/carlosl/gulp-nunjucks-render"
   },
-  "keywords": [
-    "template",
-    "templating"
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "index.js"
   ],
-  "license": "BSD-2-Clause",
+  "keywords": [
+    "gulpplugin",
+    "nunjucks",
+    "template",
+    "templating",
+    "view",
+    "render",
+    "html",
+    "javascript"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "nunjucks": "^3.1.2",
+    "plugin-error": "^1.0.1",
+    "replace-ext": "^1.0.0",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3",
+    "should": "^13.2.1",
+    "vinyl": "^2.1.0"
+  },
+  "readmeFilename": "readme.md",
   "bugs": {
-    "url": "https://github.com/mozilla/nunjucks/issues"
-  }
+    "url": "https://github.com/carlosl/gulp-nunjucks-render/issues"
+  },
+  "homepage": "https://github.com/carlosl/gulp-nunjucks-render",
+  "_id": "gulp-nunjucks-render@0.0.1"
 }
