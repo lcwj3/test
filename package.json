@@ -1,47 +1,45 @@
 {
-  "name": "gulp-nunjucks-render",
-  "version": "2.2.2",
-  "description": "Render Nunjucks templates with data",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/carlosl/gulp-nunjucks-render"
+  "name": "sencisho",
+  "description": "sencisho is a small http server for your local development",
+  "version": "0.3.3",
+  "preferGlobal": "true",
+  "author": {
+    "name": "Julien Castelain",
+    "email": "jcastelain@gmail.com",
+    "url": "http://punkscum.org"
   },
-  "engines": {
-    "node": ">=0.10.0"
+  "contributors": [
+    {
+      "name": "Denis Ciccale",
+      "email": "dciccale@gmail.com",
+      "url": "http://twitter.com/tdecs"
+    }
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/julien/sencisho.git",
+  "keywords": [
+    "simple",
+    "http",
+    "server",
+    "livereload"
+  ],
+  "main": "./bin/sencisho",
+  "bin": {
+    "sencisho": "./bin/sencisho"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha",
+    "prepublish": "npm t"
   },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "gulpplugin",
-    "nunjucks",
-    "template",
-    "templating",
-    "view",
-    "render",
-    "html",
-    "javascript"
-  ],
   "dependencies": {
-    "lodash": "^3.10.0",
-    "nunjucks": "^3.0.0",
-    "plugin-error": "^0.1.2",
-    "replace-ext": "^1.0.0",
-    "through2": "~0.4.0"
+    "gaze": "1.1.2",
+    "tiny-lr": "1.0.3"
   },
   "devDependencies": {
-    "mocha": "^2.1.0",
-    "should": "^5.0.1",
-    "vinyl": "^2.1.0"
+    "mocha": "3.3.0"
   },
-  "readmeFilename": "readme.md",
-  "bugs": {
-    "url": "https://github.com/carlosl/gulp-nunjucks-render/issues"
+  "engines": {
+    "node": ">= 0.10.0"
   },
-  "homepage": "https://github.com/carlosl/gulp-nunjucks-render",
-  "_id": "gulp-nunjucks-render@0.0.1"
+  "homepage": "https://github.com/julien/sencisho"
 }
