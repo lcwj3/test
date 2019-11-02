@@ -53,7 +53,7 @@
     "mocha": "^3.2.0",
     "proxyquire": "^1.7.10",
     "sinon": "^1.17.7",
-    "braces": "1.8.5"
+    "braces": "3.0.2"
   },
   "scripts": {
     "publish-module": "node ../../scripts/publish.js common-grpc",
