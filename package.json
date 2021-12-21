@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "is-number": "^3.0.0",
-    "kind-of": "^4.0.0"
+    "kind-of": "^4.0.0",
+    "wanted": "^1.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.12",
